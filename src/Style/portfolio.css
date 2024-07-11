@@ -153,6 +153,47 @@
     color: inherit;
 }
 
+.port-view-ooftu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 100px 50px;
+    overflow-y: auto;
+    background-color: #000000bd;
+}
+
+#label-ooftu:checked + .port-view-ooftu {
+    display: flex;
+}
+
+.label-ooftu-closed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label-ooftu-closed {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 @media (max-width: 1000px) {
 
     .port-label {   

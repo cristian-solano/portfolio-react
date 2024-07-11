@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Style/portfolio.css'
 import links from '../Images/link.png'
+import ImagesOoftu from '../Components/ImagesOoftu'
 
 
 const Portfolio = () => {
@@ -45,8 +46,8 @@ const Portfolio = () => {
         <div className='port-projects port-projects5'>
           <div className='port-projects-paragraph'>
             <p>Nobara's Project</p>
-            <label className='port-label'>
-            <a href='' target='blank'><p>View page</p> <img src={links} alt="enlace"/></a>
+            <label className='port-label' htmlFor='label-ooftu'>
+              <a><p>View page</p> <img src={links} alt="enlace"/></a>
             </label>
           </div>
         </div>
@@ -57,6 +58,13 @@ const Portfolio = () => {
               <a href='https://weatherapp-cris.netlify.app/' target='blank'><p>View page</p> <img src={links} alt="enlace"/></a>
             </label>
           </div>
+        </div>
+        <input type='checkbox' id="label-ooftu" style={{display: "none"}}/>
+        <div className='port-view-ooftu'>
+          <label htmlFor='label-ooftu' className='label-ooftu-closed'>
+            <p>X</p>
+          </label>
+          <ImagesOoftu/>
         </div>
       </div>
     </div>
